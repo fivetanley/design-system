@@ -1,6 +1,6 @@
 import Component from '@glimmer/component';
 
-const ELEMENTS = 500;
+const ELEMENTS = 5000;
 const TOGGLES = ['text', 'more', 'user'];
 
 const randomFromArray = (arr) => arr[Math.floor(Math.random() * arr.length)];
