@@ -1,0 +1,30 @@
+{{#if (eq @toggle "more")}}
+  <button class={{this.classNames}} aria-label={{@text}} type="button" ...attributes>
+    <FlightIcon @name="more-horizontal" @size={{this.iconSize}} />
+  </button>
+
+{{else if (eq @toggle "user")}}
+  <button class={{this.classNames}} aria-label={{@text}} type="button" ...attributes>
+    {{#if @avatarUrl}}
+      <div class="hds-dropdown-toggle__child-first">
+        <img src={{@avatarUrl}} alt="" role="presentation" height="32" width="32" />
+      </div>
+    {{else}}
+      <div class="hds-dropdown-toggle__child-first">
+        <FlightIcon @name="user" @size="24" />
+      </div>
+    {{/if}}
+    <div class="hds-dropdown-toggle__child-second">
+      <FlightIcon @name="chevron-down" />
+    </div>
+  </button>
+{{else}}
+  <button class={{this.classNames}} type="button" ...attributes>
+    <div class="hds-dropdown-toggle__child-first">
+      {{@text}}
+    </div>
+    <div class="hds-dropdown-toggle__child-second">
+      <FlightIcon @name="chevron-down" />
+    </div>
+  </button>
+{{/if}}
