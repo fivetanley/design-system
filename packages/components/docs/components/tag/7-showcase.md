@@ -14,7 +14,7 @@
 
   <h4 class="dummy-h4">States</h4>
   <div class="dummy-tag-states-grid">
-    {{#each @model.STATES as |state|}}
+    {{#each this.STATES as |state|}}
       <div>
         <span class="dummy-text-small">{{capitalize state}}:</span>
         <br />
@@ -24,9 +24,9 @@
       </div>
     {{/each}}
 
-    {{#each @model.COLORS as |color|}}
+    {{#each this.COLORS as |color|}}
       <h5 class="dummy-h5 dummy-tag-states-grid__title">{{capitalize color}}</h5>
-      {{#each @model.STATES as |state|}}
+      {{#each this.STATES as |state|}}
         <div>
           <span class="dummy-text-small">{{capitalize state}}:</span>
           <br />
