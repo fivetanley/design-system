@@ -9,6 +9,7 @@ export default class HdsTableIndexComponent extends Component {
    * @argument model
    * @type {array}
    */
+
   /**
    * Specifies which field the `@model` is sorted by. This **does not perform a sort**.
    * It is only used to set states on the contextual `SortBy` components.
@@ -28,5 +29,9 @@ export default class HdsTableIndexComponent extends Component {
     const arg = this.args.sortDescending;
     if (typeof arg === 'boolean') return arg;
     return arg === 'true';
+  }
+
+  get model() {
+    return this.args.model;
   }
 }
