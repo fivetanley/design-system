@@ -50,4 +50,4 @@ jobs:
         run: yarn run test:ember:percy
         working-directory: flight-website
         env:
-          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN_WEBSITE }}
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN_FLIGHT_WEBSITE }}
