@@ -1,12 +1,12 @@
 {{! template-lint-disable no-invalid-role }}
-<Root @tagName="pre" class="hds-tabs" ...attributes>
+<Root @tagName="pre" @didInsertParent={{this.test}} class="hds-tabs" ...attributes as |Node|>
   <div class="hds-tabs__tablist-wrapper">
     <ul class="hds-tabs__tablist" role="tablist">
       {{yield
         (hash
           Tab=(component
             "hds/tabs/tab"
-            didInsertNode=this.didInsertTab
+            didInsertParent=this.didInsertTab
             tabIds=this.tabIds
             panelIds=this.panelIds
             selectedTabIndex=this.selectedTabIndex

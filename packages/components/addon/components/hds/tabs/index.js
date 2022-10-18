@@ -12,12 +12,12 @@ export default class HdsTabsIndexComponent extends Root {
   @tracked selectedTabIndex;
 
   get test() {
-    console.log('Calling test in TABS', this.children);
+    console.log('Calling test in TABS Root', this.children);
     return 'Calling test in TABS';
   }
 
   get test2() {
-    console.log('Calling test in TABS', this.children);
+    console.log('Calling test in TABS Node', this.children);
     return () => {
       console.log('Calling test in TABS');
     };

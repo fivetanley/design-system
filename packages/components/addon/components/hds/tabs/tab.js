@@ -44,6 +44,7 @@ export default class HdsTabsIndexComponent extends Node {
   }
 
   get isInitialTab() {
+    console.log('isInitialTab');
     let { isSelected } = this.args;
     return isSelected;
   }
