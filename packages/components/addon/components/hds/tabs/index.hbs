@@ -1,5 +1,5 @@
 {{! template-lint-disable no-invalid-role }}
-<div class="hds-tabs" {{did-insert this.didInsert}} ...attributes>
+<Root @tagName="pre" class="hds-tabs" ...attributes>
   <div class="hds-tabs__tablist-wrapper">
     <ul class="hds-tabs__tablist" role="tablist">
       {{yield
@@ -30,4 +30,5 @@
       )
     )
   }}
-</div>
+  <Node @didInsertParent={{this.test2}} />
+</Root>

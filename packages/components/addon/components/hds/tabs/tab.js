@@ -1,15 +1,23 @@
-import Component from '@glimmer/component';
+import { Node } from 'ember-composability-tools';
 import { cached } from '@glimmer/tracking';
 import { guidFor } from '@ember/object/internals';
 import { action } from '@ember/object';
 
-export default class HdsTabsIndexComponent extends Component {
+export default class HdsTabsIndexComponent extends Node {
   /**
    * Generates a unique ID for the Tab
    *
    * @param tabId
    */
   tabId = 'tab-' + guidFor(this);
+
+  didInsertParent(element) {
+    console.log(element, element.test());
+  }
+
+  test(element) {
+    console.log('Called test in TAB', this.args.parent);
+  }
 
   @cached
   get nodeIndex() {

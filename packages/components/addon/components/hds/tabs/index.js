@@ -1,14 +1,27 @@
-import Component from '@glimmer/component';
+// import Component from '@glimmer/component';
+import { Root } from 'ember-composability-tools';
 import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
 import { assert } from '@ember/debug';
 
-export default class HdsTabsIndexComponent extends Component {
+export default class HdsTabsIndexComponent extends Root {
   @tracked tabNodes = [];
   @tracked tabIds = [];
   @tracked panelNodes = [];
   @tracked panelIds = [];
   @tracked selectedTabIndex;
+
+  get test() {
+    console.log('Calling test in TABS', this.children);
+    return 'Calling test in TABS';
+  }
+
+  get test2() {
+    console.log('Calling test in TABS', this.children);
+    return () => {
+      console.log('Calling test in TABS');
+    };
+  }
 
   @action
   didInsert() {
