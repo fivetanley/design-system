@@ -1,5 +1,4 @@
 ---
-title: Colors
 category: foundations
 component: colors
 section: generic

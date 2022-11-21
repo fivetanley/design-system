@@ -1,5 +1,4 @@
 ---
-title: Tag
 category: components
 component: tag
 section: how-to-use

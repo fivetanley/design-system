@@ -1,5 +1,4 @@
 ---
-title: Button
 category: components
 component: button
 section: accessibility

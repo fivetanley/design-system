@@ -1,5 +1,4 @@
 ---
-title: Typography
 category: foundations
 component: typography
 section: showcase

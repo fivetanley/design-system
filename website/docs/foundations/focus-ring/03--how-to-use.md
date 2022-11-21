@@ -1,5 +1,4 @@
 ---
-title: Focus ring
 category: foundations
 component: focus-ring
 section: how-to-use

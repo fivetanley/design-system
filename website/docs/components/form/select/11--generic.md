@@ -1,5 +1,4 @@
 ---
-title: Form::Select
 category: components
 group: form
 component: select

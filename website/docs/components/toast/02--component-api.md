@@ -1,5 +1,4 @@
 ---
-title: Toast
 category: components
 component: toast
 section: component-api

@@ -1,5 +1,4 @@
 ---
-title: Tabs
 category: components
 component: tabs
 section: showcase

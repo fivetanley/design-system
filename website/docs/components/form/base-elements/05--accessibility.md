@@ -1,5 +1,4 @@
 ---
-title: Form / Base elements
 category: components
 group: form
 component: base-elements

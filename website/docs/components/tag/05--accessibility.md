@@ -1,5 +1,4 @@
 ---
-title: Tag
 category: components
 component: tag
 section: accessibility

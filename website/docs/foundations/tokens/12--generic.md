@@ -1,5 +1,4 @@
 ---
-title: Design tokens
 category: foundations
 component: tokens
 section: generic

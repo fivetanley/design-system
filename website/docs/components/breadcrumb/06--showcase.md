@@ -1,5 +1,4 @@
 ---
-title: Breadcrumb
 category: components
 component: breadcrumb
 section: showcase

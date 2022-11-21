@@ -1,5 +1,4 @@
 ---
-title: Alert
 category: components
 component: alert
 section: overview

@@ -1,5 +1,4 @@
 ---
-title: ButtonSet
 category: components
 component: button-set
 section: design-guidelines

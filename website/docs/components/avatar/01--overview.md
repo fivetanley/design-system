@@ -1,5 +1,4 @@
 ---
-title: Avatar
 category: components
 component: avatar
 section: overview

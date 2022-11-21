@@ -1,5 +1,4 @@
 ---
-title: Link::Inline
 category: components
 group: link
 component: inline

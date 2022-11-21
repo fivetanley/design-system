@@ -1,5 +1,4 @@
 ---
-title: Link::Standalone
 category: components
 group: link
 component: standalone

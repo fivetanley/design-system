@@ -1,5 +1,4 @@
 ---
-title: BadgeCount
 category: components
 component: badge-count
 section: how-to-use

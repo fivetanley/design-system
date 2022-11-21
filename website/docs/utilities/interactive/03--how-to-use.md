@@ -1,5 +1,4 @@
 ---
-title: Interactive
 category: utilities
 component: interactive
 section: how-to-use

@@ -1,5 +1,4 @@
 ---
-title: PowerSelect
 category: overrides
 component: power-select
 section: overview

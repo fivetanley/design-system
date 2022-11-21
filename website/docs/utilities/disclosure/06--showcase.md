@@ -1,5 +1,4 @@
 ---
-title: Disclosure
 category: utilities
 component: disclosure
 section: showcase

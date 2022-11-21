@@ -1,5 +1,4 @@
 ---
-title: Stepper Indicator
 category: components
 component: stepper
 section: how-to-use

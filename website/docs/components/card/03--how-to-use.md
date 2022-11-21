@@ -1,5 +1,4 @@
 ---
-title: Card
 category: components
 component: card
 section: how-to-use

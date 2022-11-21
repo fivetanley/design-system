@@ -1,5 +1,4 @@
 ---
-title: Card
 category: components
 component: empty-state
 section: accessibility

@@ -1,5 +1,4 @@
 ---
-title: Badge
 category: components
 component: badge
 section: showcase

@@ -1,5 +1,4 @@
 ---
-title: IconTile
 category: components
 component: icon-tile
 section: accessibility

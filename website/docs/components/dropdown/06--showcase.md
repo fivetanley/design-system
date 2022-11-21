@@ -1,5 +1,4 @@
 ---
-title: Dropdown
 category: components
 component: dropdown
 section: showcase

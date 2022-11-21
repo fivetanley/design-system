@@ -1,5 +1,4 @@
 ---
-title: Elevation
 category: foundations
 component: elevation
 section: how-to-use
