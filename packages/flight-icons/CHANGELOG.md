@@ -1,5 +1,11 @@
 # @hashicorp/flight-icons
 
+## 2.12.0
+
+### Minor Changes
+
+- [#689](https://github.com/hashicorp/design-system/pull/689) [`b95f448a`](https://github.com/hashicorp/design-system/commit/b95f448a31cc138436caf0aae332139c5129d9dc) Thanks [@hashibot-hds](https://github.com/hashibot-hds)! - Added Figma and Loom icons
+
 ## 2.11.1
 
 ### Patch Changes
