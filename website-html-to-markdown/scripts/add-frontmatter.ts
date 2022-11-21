@@ -31,6 +31,7 @@ async function addFrontmatter() {
       let group;
       let component;
       let file;
+      let section;
 
       const fileParts = fileRelativePath.split('/');
       if (fileParts.length === 3) {
@@ -38,7 +39,9 @@ async function addFrontmatter() {
       } else if (fileParts.length === 4) {
         [category, group, component, file] = fileParts;
       }
-      const section = file?.replace(/\d+--(.*)\.hbs/, '$1');
+      if (file !== 'index.hbs') {
+        section = file?.replace(/\d+--(.*)\.hbs/, '$1');
+      }
 
       // we read the file source
       let hbsSource = await fs.readFile(filePath, 'utf8');
@@ -49,7 +52,7 @@ async function addFrontmatter() {
 
       let title;
       if (titleMatch) {
-        title = titleMatch[1].replace(/\s?component$/i,'');
+        title = titleMatch[1];
       } else {
         title = "Missing component title";
       }
@@ -61,13 +64,16 @@ async function addFrontmatter() {
       let frontmatter = '';
       frontmatter += '<!-- %%%\n';
       frontmatter += '---\n';
-      frontmatter += `title: ${title}\n`;
-      frontmatter += `category: ${category}\n`;
-      if (group) {
-        frontmatter += `group: ${group}\n`;
+      if (file === 'index.hbs') {
+        frontmatter += `title: ${title}\n`;
+      } else {
+        frontmatter += `category: ${category}\n`;
+        if (group) {
+          frontmatter += `group: ${group}\n`;
+        }
+        frontmatter += `component: ${component}\n`;
+        frontmatter += `section: ${section}\n`;
       }
-      frontmatter += `component: ${component}\n`;
-      frontmatter += `section: ${section}\n`;
       frontmatter += '---\n';
       frontmatter += '%%% -->\n';
 
